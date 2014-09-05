@@ -1,0 +1,91 @@
+<html>
+<head>
+<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript">
+	function drawmap() {
+		var mapOptions = {
+			zoom : 3,
+			center : new google.maps.LatLng(38, -97),
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById("mapDiv"), mapOptions);
+
+		var markers = [ {
+			x : 25.788,
+			y : -80.23,
+			title : "Anchor_6062"
+		}, {
+			x : 32.797,
+			y : -96.819,
+			title : "Anchor_6061"
+		}, {
+			x : 37.439,
+			y : -122.141,
+			title : "Anchor_6045"
+		}, {
+			x : 39.959,
+			y : -75.609,
+			title : "Anchor_6072"
+		}, {
+			x : 40.709,
+			y : -74.011,
+			title : "Anchor_6024"
+		}, {
+			x : 42.378,
+			y : -71.132,
+			title : "Anchor_6010"
+		}, {
+			x : 47.609,
+			y : -122.34,
+			title : "Anchor_6065"
+		}, {
+			x : 44.968,
+			y : -93.263,
+			title : "Probe_13202"
+		}, {
+			x : 40.039,
+			y : -105.3,
+			title : "Probe_14754"
+		}, {
+			x : 45.669,
+			y : -111.051,
+			title : "Probe_3932"
+		}, {
+			x : 33.781,
+			y : -84.379,
+			title : "Probe_10697"
+		}, {
+			x : 42.329,
+			y : -83.051,
+			title : "Probe_11025"
+		}, {
+			x : 41.881,
+			y : -88.011,
+			title : "Probe_11837"
+		}, {
+			x : 38.541,
+			y : -90.472,
+			title : "Probe_12318"
+		} ];
+
+		for (var i = 0; i < markers.length; i++) {
+			var marker = markers[i];
+			new google.maps.Marker({
+				position : new google.maps.LatLng(marker.x, marker.y),
+				map : map,
+				title : marker.title
+			});
+		}
+
+	}
+</script>
+</head>
+<body onload="drawmap()">
+	<div style="width: 800px; height: 400px; background-color: red;"
+		id="mapDiv"></div>
+
+
+</body>
+
+</html>
