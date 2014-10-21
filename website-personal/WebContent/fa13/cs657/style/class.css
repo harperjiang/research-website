@@ -1,0 +1,71 @@
+body {
+	margin-left: 50px;
+	margin-right: auto;
+}
+
+table.common {
+	border: 0px none black;
+	width: 800px;
+}
+
+table.common td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-family: Calibri, Sans-Serif;
+	font-size: 14px;
+}
+
+table.common tr.even {
+	background-color: #f8f8f7;
+}
+
+table.common tr.odd {
+	background-color: #fcfcfc;
+}
+
+div {
+	font-family: Calibri, Sans-Serif;
+}
+
+div.title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.text {
+	font-size: 14px;
+	width: 700px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+div.section_header {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: -10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #f1f1f1;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 800px;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.section_content {
+	
+}
